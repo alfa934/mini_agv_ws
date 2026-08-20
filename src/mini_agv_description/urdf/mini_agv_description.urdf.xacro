@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/4209ac7f0152411e9d4dcbf0/w/3377871fe4109e8e8f25bc5b/e/d6705610344c69e12c64875a -->
+<robot name="mini_agv" xmlns:xacro="http://www.ros.org/wiki/xacro">
+ 
+    <xacro:include filename="xacro_properties/xacro_properties.xacro"/>
+    <xacro:include filename="modules/base_and_wheels.xacro"/>
+    <xacro:include filename="modules/imu.xacro"/>
+    <xacro:include filename="modules/lidar.xacro"/>
+    <xacro:include filename="gazebo/gazebo_plugins.xacro"/>
+    <xacro:include filename="gazebo/gazebo_properties.xacro"/>
+
+</robot>

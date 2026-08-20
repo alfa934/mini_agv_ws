@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!-- 
+  lidar.xacro – replaces GPU LiDAR with a depth camera 
+  The depth image is converted to a laser scan via depthimage_to_laserscan.
+-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ============ LINK ============ -->
+  <link name="velodyne_lidar_link">
+    <!-- Inertial (from your URDF) -->
+    <inertial>
+      <origin xyz="0.000186953 -2.55566e-06 -0.0355054" rpy="0 0 0"/>
+      <mass value="0.719126"/>
+      <inertia ixx="0.000767719" ixy="-3.44e-10" ixz="-3.81693e-06" 
+               iyy="0.000777879" iyz="6.0148e-08" izz="0.000926152"/>
+    </inertial>
+
+    <!-- Visual (your STL mesh) -->
+    <visual>
+      <origin xyz="0 -0 0" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/velodyne_lidar.stl"/>
+      </geometry>
+      <material name="velodyne_lidar_material">
+        <color rgba="0.490196 0.490196 0.490196 1"/>
+      </material>
+    </visual>
+
+    <!-- Collision (same mesh) -->
+    <collision>
+      <origin xyz="0 -0 0" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/velodyne_lidar.stl"/>
+      </geometry>
+    </collision>
+
+    <!-- ============ DEPTH CAMERA SENSOR (CPU) ============ -->
+    <!-- This replaces the GPU LiDAR. It runs entirely on CPU. -->
+    <sensor name="depth_camera" type="depth_camera">
+      <always_on>true</always_on>
+      <update_rate>10</update_rate>               <!-- Hz -->
+      <visualize>true</visualize>                 <!-- shows RGB/depth in Gazebo -->
+      <topic>/demo/depth</topic>                  <!-- base topic; Gazebo will append /image and /camera_info -->
+
+      <camera>
+        <horizontal_fov>1.0472</horizontal_fov>   <!-- ~60° field of view -->
+        <image>
+          <width>640</width>
+          <height>480</height>
+        </image>
+        <clip>
+          <near>0.1</near>                        <!-- min range (m) -->
+          <far>10.0</far>                         <!-- max range (m) -->
+        </clip>
+      </camera>
+    </sensor>
+
+  </link>
+
+  <!-- ============ JOINT ============ -->
+  <!-- Fixed joint from base_link to the lidar frame -->
+  <joint name="lidar_joint" type="fixed">
+    <origin xyz="0 0 0.101" rpy="-3.14159 0 -3.14159"/>
+    <parent link="base_link"/>
+    <child link="velodyne_lidar_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+
+</robot>

@@ -1,0 +1,571 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/4209ac7f0152411e9d4dcbf0/w/3377871fe4109e8e8f25bc5b/e/d6705610344c69e12c64875a -->
+<robot name="mini_agv">
+  <!-- Link base_assy -->
+  <link name="base_assy_link">
+    <inertial>
+      <origin xyz="0.111897 0.136763 0.0219121" rpy="0 0 0"/>
+      <mass value="2.05848"/>
+      <inertia ixx="0.0401005" ixy="-0" ixz="-0" iyy="0.0244416" iyz="-6.33966e-05" izz="0.0643575"/>
+    </inertial>
+    <!-- Part part_5 -->
+    <visual>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_5.stl"/>
+      </geometry>
+      <material name="part_5_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_6 -->
+    <visual>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_6.stl"/>
+      </geometry>
+      <material name="part_6_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_3 -->
+    <visual>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_3.stl"/>
+      </geometry>
+      <material name="part_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_4 -->
+    <visual>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_4.stl"/>
+      </geometry>
+      <material name="part_4_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_2 -->
+    <visual>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_2.stl"/>
+      </geometry>
+      <material name="part_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1 -->
+    <visual>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_1.stl"/>
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.111897 0.153132 0.0100307" rpy="-0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/part_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link pg36_assy -->
+  <link name="pg36_assy_link">
+    <inertial>
+      <origin xyz="-1.21e-10 0.0513289 -0.0214366" rpy="0 0 0"/>
+      <mass value="0.313209"/>
+      <inertia ixx="0.000352725" ixy="-2e-12" ixz="-0" iyy="6.98889e-05" iyz="8.02005e-06" izz="0.000348643"/>
+    </inertial>
+    <!-- Part pg36_body -->
+    <visual>
+      <origin xyz="0 -0.007 -0.023" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/pg36_body.stl"/>
+      </geometry>
+      <material name="pg36_body_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.007 -0.023" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/pg36_body.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bracket_body -->
+    <visual>
+      <origin xyz="-0 -0.0072 -0.023" rpy="-1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/bracket_body.stl"/>
+      </geometry>
+      <material name="bracket_body_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0.0072 -0.023" rpy="-1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/bracket_body.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bracket_shaft -->
+    <visual>
+      <origin xyz="0 -0.01 -0.023" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/bracket_shaft.stl"/>
+      </geometry>
+      <material name="bracket_shaft_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.01 -0.023" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/bracket_shaft.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part pg36_shaft -->
+    <visual>
+      <origin xyz="0 -0.007 -0.023" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/pg36_shaft.stl"/>
+      </geometry>
+      <material name="pg36_shaft_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.007 -0.023" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/pg36_shaft.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link wheel_hub_assy -->
+  <link name="wheel_hub_assy_link">
+    <inertial>
+      <origin xyz="0 0 0.00843384" rpy="0 0 0"/>
+      <mass value="0.177204"/>
+      <inertia ixx="0.000154537" ixy="-0" ixz="-0" iyy="0.000154537" iyz="-0" izz="0.000289564"/>
+    </inertial>
+    <!-- Part wheel -->
+    <visual>
+      <origin xyz="0 0 0" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/wheel.stl"/>
+      </geometry>
+      <material name="wheel_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/wheel.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 8mm_flange_hub -->
+    <visual>
+      <origin xyz="0 0 0" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/8mm_flange_hub.stl"/>
+      </geometry>
+      <material name="8mm_flange_hub_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/8mm_flange_hub.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from pg36_assy to wheel_hub_assy -->
+  <joint name="wheel_1_joint" type="continuous">
+    <origin xyz="0 -0.0283 -0.023" rpy="1.5708 1.5708 0"/>
+    <parent link="pg36_assy_link"/>
+    <child link="wheel_hub_assy_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from base_assy to pg36_assy -->
+  <joint name="motor_1_joint" type="fixed">
+    <origin xyz="0.251897 0.0331323 0.0100307" rpy="-0 0 1.5708"/>
+    <parent link="base_assy_link"/>
+    <child link="pg36_assy_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link pg36_assy_2 -->
+  <link name="pg36_assy_2_link">
+    <inertial>
+      <origin xyz="-1.21e-10 0.0513289 -0.0214366" rpy="0 0 0"/>
+      <mass value="0.313209"/>
+      <inertia ixx="0.000352725" ixy="-2e-12" ixz="-0" iyy="6.98889e-05" iyz="8.02005e-06" izz="0.000348643"/>
+    </inertial>
+    <!-- Part pg36_body_2 -->
+    <visual>
+      <origin xyz="0 -0.007 -0.023" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/pg36_body.stl"/>
+      </geometry>
+      <material name="pg36_body_2_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.007 -0.023" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/pg36_body.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bracket_body_2 -->
+    <visual>
+      <origin xyz="0 -0.0072 -0.023" rpy="-1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/bracket_body.stl"/>
+      </geometry>
+      <material name="bracket_body_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.0072 -0.023" rpy="-1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/bracket_body.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bracket_shaft_2 -->
+    <visual>
+      <origin xyz="0 -0.01 -0.023" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/bracket_shaft.stl"/>
+      </geometry>
+      <material name="bracket_shaft_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.01 -0.023" rpy="-1.5708 -0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/bracket_shaft.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part pg36_shaft_2 -->
+    <visual>
+      <origin xyz="0 -0.007 -0.023" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/pg36_shaft.stl"/>
+      </geometry>
+      <material name="pg36_shaft_2_material">
+        <color rgba="0.74902 0.74902 0.74902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.007 -0.023" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/pg36_shaft.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link wheel_hub_assy_2 -->
+  <link name="wheel_hub_assy_2_link">
+    <inertial>
+      <origin xyz="0 0 0.00843384" rpy="0 0 0"/>
+      <mass value="0.177204"/>
+      <inertia ixx="0.000154537" ixy="0" ixz="0" iyy="0.000154537" iyz="-0" izz="0.000289564"/>
+    </inertial>
+    <!-- Part wheel_2 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/wheel.stl"/>
+      </geometry>
+      <material name="wheel_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/wheel.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 8mm_flange_hub_2 -->
+    <visual>
+      <origin xyz="0 -0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/8mm_flange_hub.stl"/>
+      </geometry>
+      <material name="8mm_flange_hub_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/8mm_flange_hub.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from pg36_assy_2 to wheel_hub_assy_2 -->
+  <joint name="wheel_2_joint" type="continuous">
+    <origin xyz="0 -0.0283 -0.023" rpy="-1.5708 -0 -3.14159"/>
+    <parent link="pg36_assy_2_link"/>
+    <child link="wheel_hub_assy_2_link"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from base_assy to pg36_assy_2 -->
+  <joint name="motor_2_joint" type="fixed">
+    <origin xyz="-0.0281034 0.0331323 0.0100307" rpy="0 -0 -1.5708"/>
+    <parent link="base_assy_link"/>
+    <child link="pg36_assy_2_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link caster_frame -->
+  <link name="caster_frame_link">
+    <inertial>
+      <origin xyz="0 -0 -0.0201897" rpy="0 0 0"/>
+      <mass value="0.0626507"/>
+      <inertia ixx="3.42636e-05" ixy="0" ixz="0" iyy="3.81143e-05" iyz="0" izz="3.79824e-05"/>
+    </inertial>
+    <!-- Part caster_frame -->
+    <visual>
+      <origin xyz="0 0.0135 -0.04825" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/caster_frame.stl"/>
+      </geometry>
+      <material name="caster_frame_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0135 -0.04825" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/caster_frame.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link caster_wheel -->
+  <link name="caster_wheel_link">
+    <inertial>
+      <origin xyz="-0 -0 -0.0135" rpy="0 0 0"/>
+      <mass value="0.122328"/>
+      <inertia ixx="3.90245e-05" ixy="0" ixz="0" iyy="3.90245e-05" iyz="0" izz="6.31861e-05"/>
+    </inertial>
+    <!-- Part caster_wheel -->
+    <visual>
+      <origin xyz="-0 0 0" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/caster_wheel.stl"/>
+      </geometry>
+      <material name="caster_wheel_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 0" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/caster_wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from caster_frame to caster_wheel -->
+  <joint name="caster_wheel_1_joint" type="continuous">
+    <origin xyz="0 0.0135 -0.04825" rpy="-1.5708 -1.5708 0"/>
+    <parent link="caster_frame_link"/>
+    <child link="caster_wheel_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from base_assy to caster_frame -->
+  <joint name="caster_1_joint" type="fixed">
+    <origin xyz="0.231897 0.318132 0.0100307" rpy="-0 0 1.5708"/>
+    <parent link="base_assy_link"/>
+    <child link="caster_frame_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link caster_frame_2 -->
+  <link name="caster_frame_2_link">
+    <inertial>
+      <origin xyz="0 -0 -0.0201897" rpy="0 0 0"/>
+      <mass value="0.0626507"/>
+      <inertia ixx="3.42636e-05" ixy="0" ixz="0" iyy="3.81143e-05" iyz="0" izz="3.79824e-05"/>
+    </inertial>
+    <!-- Part caster_frame_2 -->
+    <visual>
+      <origin xyz="0 0.0135 -0.04825" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/caster_frame.stl"/>
+      </geometry>
+      <material name="caster_frame_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0135 -0.04825" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/caster_frame.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link caster_wheel_2 -->
+  <link name="caster_wheel_2_link">
+    <inertial>
+      <origin xyz="0 -0 -0.0135" rpy="0 0 0"/>
+      <mass value="0.122328"/>
+      <inertia ixx="3.90245e-05" ixy="-0" ixz="0" iyy="3.90245e-05" iyz="0" izz="6.31861e-05"/>
+    </inertial>
+    <!-- Part caster_wheel_2 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/caster_wheel.stl"/>
+      </geometry>
+      <material name="caster_wheel_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/caster_wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from caster_frame_2 to caster_wheel_2 -->
+  <joint name="caster_wheel_2_joint" type="continuous">
+    <origin xyz="0 -0.0135 -0.04825" rpy="1.5708 1.5708 0"/>
+    <parent link="caster_frame_2_link"/>
+    <child link="caster_wheel_2_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from base_assy to caster_frame_2 -->
+  <joint name="caster_2_joint" type="fixed">
+    <origin xyz="-0.00810344 0.318132 0.0100307" rpy="-0 0 1.5708"/>
+    <parent link="base_assy_link"/>
+    <child link="caster_frame_2_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link velodyne_lidar -->
+  <link name="velodyne_lidar_link">
+    <inertial>
+      <origin xyz="0.000186953 -2.55566e-06 -0.0355054" rpy="0 0 0"/>
+      <mass value="0.719126"/>
+      <inertia ixx="0.000767719" ixy="-3.44e-10" ixz="-3.81693e-06" iyy="0.000777879" iyz="6.0148e-08" izz="0.000926152"/>
+    </inertial>
+    <!-- Part velodyne_lidar -->
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/velodyne_lidar.stl"/>
+      </geometry>
+      <material name="velodyne_lidar_material">
+        <color rgba="0.490196 0.490196 0.490196 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.5708 0 -0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/velodyne_lidar.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_assy to velodyne_lidar -->
+  <joint name="lidar_joint" type="fixed">
+    <origin xyz="0.111897 0.153132 0.0320307" rpy="3.14159 0 1.5708"/>
+    <parent link="base_assy_link"/>
+    <child link="velodyne_lidar_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+
+  <!-- Link imu_link -->
+  <link name="imu_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001666667" ixy="0" ixz="0" iyy="0.0001666667" iyz="0" izz="0.0001666667"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="imu_material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint from base_assy_link to imu_link -->
+  <joint name="imu_joint" type="fixed">
+    <origin xyz="0.111897 0.153132 0.03" rpy="0 0 0"/>
+    <parent link="base_assy_link"/>
+    <child link="imu_link"/>
+  </joint>
+
+    <link name="base_link">
+    <inertial>
+      <mass value="0.001"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
+  </link>
+
+  <joint name="base_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 1.5708"/>   <!-- 90° rotation about Z -->
+    <parent link="base_assy_link"/>
+    <child link="base_link"/>
+  </joint>
+
+</robot>

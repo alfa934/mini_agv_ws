@@ -1,0 +1,834 @@
+<sdf version='1.11'>
+  <model name='mini_agv'>
+    <link name='base_assy_link'>
+      <inertial>
+        <pose>0.111896416619668 0.12818213973935061 0.024156114101248152 0 0 0</pose>
+        <mass>3.5293253999999998</mass>
+        <inertia>
+          <ixx>0.054184095269773733</ixx>
+          <ixy>4.0963213800149223e-08</ixy>
+          <ixz>1.6729364728587659e-08</ixz>
+          <iyy>0.035016300053187059</iyy>
+          <iyz>-0.0021047685443255099</iyz>
+          <izz>0.083572850012242197</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_assy_link_collision'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_5.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_collision_1'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_6.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_collision_2'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_3.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_collision_3'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_4.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_collision_4'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_2.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_collision_5'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__caster_frame_link_collision_6'>
+        <pose>0.2183970000000911 0.31813195041173109 -0.038219299999999998 0 0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/caster_frame.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__caster_frame_2_link_collision_7'>
+        <pose>-0.021603439999908929 0.31813195041173109 -0.038219299999999998 0 0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/caster_frame.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__velodyne_lidar_link_collision_8'>
+        <pose>0.111897 0.15313199999999999 0.032030700000000002 1.5707899999999997 -1.6653345369377348e-16 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/velodyne_lidar.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__pg36_assy_link_collision_9'>
+        <pose>0.25889699999995269 0.033132325712435733 -0.0129693 -3.1415889803846895 -1.5707963118937354 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/pg36_body.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__pg36_assy_link_collision_10'>
+        <pose>0.25909699999995139 0.033132326447076747 -0.0129693 -1.5708 0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/bracket_body.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__pg36_assy_link_collision_11'>
+        <pose>0.26189699999993249 0.033132336732051043 -0.0129693 -1.5708 0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/bracket_shaft.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__pg36_assy_link_collision_12'>
+        <pose>0.25889699999995269 0.033132325712435733 -0.0129693 -3.1415889803846895 -1.5707963118937354 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/pg36_shaft.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__pg36_assy_2_link_collision_13'>
+        <pose>-0.035103399999952781 0.033132325712435733 -0.0129693 -3.6732051033734664e-06 -1.5707963267948966 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/pg36_body.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__pg36_assy_2_link_collision_14'>
+        <pose>-0.035303399999951433 0.033132326447076747 -0.0129693 -1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/bracket_body.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__pg36_assy_2_link_collision_15'>
+        <pose>-0.038103399999932543 0.033132336732051043 -0.0129693 -1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/bracket_shaft.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_assy_link_fixed_joint_lump__pg36_assy_2_link_collision_16'>
+        <pose>-0.035103399999952781 0.033132325712435733 -0.0129693 -3.6732051033734664e-06 -1.5707963267948966 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/pg36_shaft.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_assy_link_visual'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_5.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.96078372 1 1 1</diffuse>
+          <ambient>0.96078372 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_visual_1'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_6.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 0.661764979 0.00490196235 1</diffuse>
+          <ambient>1 0.661764979 0.00490196235 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_visual_2'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_3.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.28921625 0.475489974 0.882352531 1</diffuse>
+          <ambient>0.28921625 0.475489974 0.882352531 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_visual_3'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_4.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_visual_4'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.808823764 0.808823764 0.808823764 1</diffuse>
+          <ambient>0.808823764 0.808823764 0.808823764 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_visual_5'>
+        <pose>0.111897 0.15313199999999999 0.0100307 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/part_1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.769607484 1 1 1</diffuse>
+          <ambient>0.769607484 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__caster_frame_link_visual_6'>
+        <pose>0.2183970000000911 0.31813195041173109 -0.038219299999999998 0 0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/caster_frame.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.28921625 0.475489974 0.882352531 1</diffuse>
+          <ambient>0.28921625 0.475489974 0.882352531 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__caster_frame_2_link_visual_7'>
+        <pose>-0.021603439999908929 0.31813195041173109 -0.038219299999999998 0 0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/caster_frame.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.28921625 0.475489974 0.882352531 1</diffuse>
+          <ambient>0.28921625 0.475489974 0.882352531 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__velodyne_lidar_link_visual_8'>
+        <pose>0.111897 0.15313199999999999 0.032030700000000002 1.5707899999999997 -1.6653345369377348e-16 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/velodyne_lidar.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.612744987 0.612744987 0.612744987 1</diffuse>
+          <ambient>0.612744987 0.612744987 0.612744987 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__pg36_assy_link_visual_9'>
+        <pose>0.25889699999995269 0.033132325712435733 -0.0129693 -3.1415889803846895 -1.5707963118937354 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/pg36_body.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.936275005 0.936275005 0.936275005 1</diffuse>
+          <ambient>0.936275005 0.936275005 0.936275005 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__pg36_assy_link_visual_10'>
+        <pose>0.25909699999995139 0.033132326447076747 -0.0129693 -1.5708 0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/bracket_body.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.769607484 1 1 1</diffuse>
+          <ambient>0.769607484 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__pg36_assy_link_visual_11'>
+        <pose>0.26189699999993249 0.033132336732051043 -0.0129693 -1.5708 0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/bracket_shaft.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.769607484 1 1 1</diffuse>
+          <ambient>0.769607484 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__pg36_assy_link_visual_12'>
+        <pose>0.25889699999995269 0.033132325712435733 -0.0129693 -3.1415889803846895 -1.5707963118937354 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/pg36_shaft.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.936275005 0.936275005 0.936275005 1</diffuse>
+          <ambient>0.936275005 0.936275005 0.936275005 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__pg36_assy_2_link_visual_13'>
+        <pose>-0.035103399999952781 0.033132325712435733 -0.0129693 -3.6732051033734664e-06 -1.5707963267948966 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/pg36_body.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.936275005 0.936275005 0.936275005 1</diffuse>
+          <ambient>0.936275005 0.936275005 0.936275005 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__pg36_assy_2_link_visual_14'>
+        <pose>-0.035303399999951433 0.033132326447076747 -0.0129693 -1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/bracket_body.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.769607484 1 1 1</diffuse>
+          <ambient>0.769607484 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__pg36_assy_2_link_visual_15'>
+        <pose>-0.038103399999932543 0.033132336732051043 -0.0129693 -1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/bracket_shaft.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.769607484 1 1 1</diffuse>
+          <ambient>0.769607484 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_assy_link_fixed_joint_lump__pg36_assy_2_link_visual_16'>
+        <pose>-0.035103399999952781 0.033132325712435733 -0.0129693 -3.6732051033734664e-06 -1.5707963267948966 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/pg36_shaft.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.936275005 0.936275005 0.936275005 1</diffuse>
+          <ambient>0.936275005 0.936275005 0.936275005 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='caster_wheel_1_joint' type='revolute'>
+      <pose relative_to='base_assy_link'>0.2183970000000911 0.31813195041173109 -0.038219299999999998 1.570792653558434 -1.5707926536057681 -1.5707926535624277</pose>
+      <parent>base_assy_link</parent>
+      <child>caster_wheel_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='caster_wheel_link'>
+      <pose relative_to='caster_wheel_1_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 -0.0135 0 0 0</pose>
+        <mass>0.12232800000000001</mass>
+        <inertia>
+          <ixx>3.9024499999999999e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>3.9024499999999999e-05</iyy>
+          <iyz>0</iyz>
+          <izz>6.3186099999999995e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='caster_wheel_link_collision'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/caster_wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='caster_wheel_link_visual'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/caster_wheel.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.769607484 1 1 1</diffuse>
+          <ambient>0.769607484 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='caster_wheel_2_joint' type='revolute'>
+      <pose relative_to='base_assy_link'>0.0053965599999089287 0.31813204958826891 -0.038219299999999998 -1.570792653558434 1.5707926536057681 -1.5707926535624277</pose>
+      <parent>base_assy_link</parent>
+      <child>caster_wheel_2_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='caster_wheel_2_link'>
+      <pose relative_to='caster_wheel_2_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 -0.0135 0 0 0</pose>
+        <mass>0.12232800000000001</mass>
+        <inertia>
+          <ixx>3.9024499999999999e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>3.9024499999999999e-05</iyy>
+          <iyz>0</iyz>
+          <izz>6.3186099999999995e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='caster_wheel_2_link_collision'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/caster_wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='caster_wheel_2_link_visual'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/caster_wheel.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.769607484 1 1 1</diffuse>
+          <ambient>0.769607484 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='wheel_1_joint' type='revolute'>
+      <pose relative_to='base_assy_link'>0.28019699999980913 0.033132403951704428 -0.0129693 -1.570792653558434 1.5707926536057681 -1.5707926535624277</pose>
+      <parent>base_assy_link</parent>
+      <child>wheel_hub_assy_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheel_hub_assy_link'>
+      <pose relative_to='wheel_1_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.0084338399999999997 0 0 0</pose>
+        <mass>0.177204</mass>
+        <inertia>
+          <ixx>0.000154537</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000154537</iyy>
+          <iyz>0</iyz>
+          <izz>0.00028956400000000002</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheel_hub_assy_link_collision'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='wheel_hub_assy_link_collision_1'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/8mm_flange_hub.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='wheel_hub_assy_link_visual'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/wheel.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.808823764 0.808823764 0.808823764 1</diffuse>
+          <ambient>0.808823764 0.808823764 0.808823764 1</ambient>
+        </material>
+      </visual>
+      <visual name='wheel_hub_assy_link_visual_1'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/8mm_flange_hub.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.769607484 1 1 1</diffuse>
+          <ambient>0.769607484 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='wheel_2_joint' type='revolute'>
+      <pose relative_to='base_assy_link'>-0.05640339999980909 0.033132403951704428 -0.0129693 -1.5708 1.1102230246251565e-16 1.5707953071795873</pose>
+      <parent>base_assy_link</parent>
+      <child>wheel_hub_assy_2_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheel_hub_assy_2_link'>
+      <pose relative_to='wheel_2_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.0084338399999999997 0 0 0</pose>
+        <mass>0.177204</mass>
+        <inertia>
+          <ixx>0.000154537</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000154537</iyy>
+          <iyz>0</iyz>
+          <izz>0.00028956400000000002</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheel_hub_assy_2_link_collision'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='wheel_hub_assy_2_link_collision_1'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/8mm_flange_hub.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='wheel_hub_assy_2_link_visual'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/wheel.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.808823764 0.808823764 0.808823764 1</diffuse>
+          <ambient>0.808823764 0.808823764 0.808823764 1</ambient>
+        </material>
+      </visual>
+      <visual name='wheel_hub_assy_2_link_visual_1'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mini_agv_description/assets/8mm_flange_hub.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.769607484 1 1 1</diffuse>
+          <ambient>0.769607484 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <frame name='caster_1_joint' attached_to='base_assy_link'>
+      <pose>0.23189699999999999 0.31813200000000003 0.0100307 0 0 1.5708</pose>
+    </frame>
+    <frame name='caster_frame_link' attached_to='caster_1_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='caster_2_joint' attached_to='base_assy_link'>
+      <pose>-0.0081034399999999999 0.31813200000000003 0.0100307 0 0 1.5708</pose>
+    </frame>
+    <frame name='caster_frame_2_link' attached_to='caster_2_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='lidar_joint' attached_to='base_assy_link'>
+      <pose>0.111897 0.15313199999999999 0.032030700000000002 3.1415899999999999 0 1.5708</pose>
+    </frame>
+    <frame name='velodyne_lidar_link' attached_to='lidar_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='motor_1_joint' attached_to='base_assy_link'>
+      <pose>0.25189699999999998 0.033132300000000003 0.0100307 0 0 1.5708</pose>
+    </frame>
+    <frame name='pg36_assy_link' attached_to='motor_1_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='motor_2_joint' attached_to='base_assy_link'>
+      <pose>-0.028103400000000001 0.033132300000000003 0.0100307 0 0 -1.5708</pose>
+    </frame>
+    <frame name='pg36_assy_2_link' attached_to='motor_2_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+
+
+    <joint name='imu_joint' type='fixed'>
+      <parent>base_assy_link</parent>
+      <child>imu_link</child>
+      <pose relative_to="base_assy_link">0.111897 0.153132 0.03 0 0 0</pose>
+    </joint>
+
+    <link name='imu_link'>
+      <pose relative_to="imu_joint"/>
+      <visual name="imu_link_visual">
+        <geometry>
+          <box><size>
+            0.1 0.1 0.1
+          </size></box>
+        </geometry>
+      </visual>
+
+      <collision name="imu_link_collision">
+        <geometry>
+          <box><size>
+            0.1 0.1 0.1
+          </size></box>
+        </geometry>
+      </collision>
+
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.0001666667</ixx>
+          <iyy>0.0001666667</iyy>
+          <izz>0.0001666667</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+
+      <sensor name="imu_sensor" type="imu">
+        <always_on>true</always_on>
+        <update_rate>100</update_rate>
+        <visualize>true</visualize>
+        <topic>demo/imu</topic>
+        <gz_frame_id>imu_link</gz_frame_id>
+        <imu>
+          <angular_velocity>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-4</stddev>
+                <bias_mean>0.0000075</bias_mean>
+                <bias_stddev>0.0000008</bias_stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-4</stddev>
+                <bias_mean>0.0000075</bias_mean>
+                <bias_stddev>0.0000008</bias_stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2e-4</stddev>
+                <bias_mean>0.0000075</bias_mean>
+                <bias_stddev>0.0000008</bias_stddev>
+              </noise>
+            </z>
+          </angular_velocity>
+          <linear_acceleration>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>1.7e-2</stddev>
+                <bias_mean>0.1</bias_mean>
+                <bias_stddev>0.001</bias_stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>1.7e-2</stddev>
+                <bias_mean>0.1</bias_mean>
+                <bias_stddev>0.001</bias_stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>1.7e-2</stddev>
+                <bias_mean>0.1</bias_mean>
+                <bias_stddev>0.001</bias_stddev>
+              </noise>
+            </z>
+          </linear_acceleration>
+        </imu>
+      </sensor>
+    </link>
+
+    <link name='base_link'>
+      <pose relative_to='base_assy_link'>0 0 0 0 0 1.5708</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>1e-6</ixx>
+          <iyy>1e-6</iyy>
+          <izz>1e-6</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+    </link>
+
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <!-- wheels -->
+      <left_joint>wheel_1_joint</left_joint>
+      <right_joint>wheel_2_joint</right_joint>
+
+      <!-- kinematics -->
+      <wheel_separation>0.28</wheel_separation>
+      <wheel_radius>0.05675</wheel_radius>
+
+      <!-- limits -->
+      <max_linear_acceleration>0.1</max_linear_acceleration>
+
+      <!-- input -->
+      <topic>/demo/cmd_vel</topic>
+
+      <!-- output -->
+      <odom_topic>/demo/odom</odom_topic>
+      <tf_topic>/tf</tf_topic>
+
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+    </plugin>
+
+    <plugin
+      filename="gz-sim-joint-state-publisher-system"
+      name="gz::sim::systems::JointStatePublisher">
+      <topic>joint_states</topic>
+    </plugin>
+
+
+  </model>
+</sdf>

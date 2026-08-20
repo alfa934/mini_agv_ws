@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/4209ac7f0152411e9d4dcbf0/w/3377871fe4109e8e8f25bc5b/e/d6705610344c69e12c64875a -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+    <!-- Gazebo properties for the base link -->
+    <gazebo reference="base_link">
+        <mu1 value="0.5"/> <!-- Friction coefficient in the first direction -->
+        <mu2 value="0.5"/> <!-- Friction coefficient in the second direction -->
+    </gazebo>
+
+    <gazebo reference="velodyne_lidar_link">
+        <mu1 value="0.5"/>
+        <mu2 value="0.5"/>
+    </gazebo>
+
+    <gazebo reference="imu_link">
+        <mu1 value="0.5"/>
+        <mu2 value="0.5"/>
+    </gazebo>
+
+    <!-- ===== LEFT DRIVE WHEEL (higher friction) ===== -->
+    <gazebo reference="wheel_hub_assy_link">
+        <mu1 value="1.5"/>
+        <mu2 value="1.5"/>
+    </gazebo>
+
+    <!-- ===== RIGHT DRIVE WHEEL (higher friction) ===== -->
+    <gazebo reference="wheel_hub_assy_2_link">
+        <mu1 value="1.5"/>
+        <mu2 value="1.5"/>
+    </gazebo>
+
+    <!-- ===== CASTER WHEELS (moderate friction) ===== -->
+    <gazebo reference="caster_wheel_link">
+        <mu1 value="0.8"/>
+        <mu2 value="0.8"/>
+    </gazebo>
+
+    <gazebo reference="caster_wheel_2_link">
+        <mu1 value="0.8"/>
+        <mu2 value="0.8"/>
+    </gazebo>
+
+</robot>

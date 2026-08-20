@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "4209ac7f0152411e9d4dcbf0",
+    "documentMicroversion": "61b15490aadc0d46fc8ae798",
+    "elementId": "8f7f35d5375cfcb1efcd0a37",
+    "fullConfiguration": "default",
+    "id": "MwbmQgaf5uBE72Qdm",
+    "isStandardContent": false,
+    "name": "velodyne_lidar <1>",
+    "partId": "JFD",
+    "suppressed": false,
+    "type": "Part"
+}

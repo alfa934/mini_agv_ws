@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/4209ac7f0152411e9d4dcbf0/w/3377871fe4109e8e8f25bc5b/e/d6705610344c69e12c64875a -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- ==================== GLOBAL SENSOR PLUGINS (MANDATORY FOR IMU) ==================== -->
+    <gazebo>
+        <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+            <render_engine>ogre2</render_engine>
+        </plugin>
+        
+        <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu">
+        </plugin>
+
+    </gazebo>
+
+    <!-- ==================== DIFF DRIVE PLUGIN ==================== -->
+    <gazebo>
+        <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+            <left_joint>wheel_left_joint</left_joint>
+            <right_joint>wheel_right_joint</right_joint>
+            <wheel_separation>0.3306</wheel_separation>
+            <wheel_radius>0.05675</wheel_radius>
+            <topic>/cmd_vel</topic>
+            <odom_topic>/odom</odom_topic>
+            <tf_topic>/tf</tf_topic>
+            <frame_id>odom</frame_id>
+            <child_frame_id>base_footprint</child_frame_id>
+            <odometry_frame>odom</odometry_frame>
+            <max_linear_velocity>1.0</max_linear_velocity>        <!-- or whatever you want -->
+            <max_linear_acceleration>0.5</max_linear_acceleration> <!-- symmetric -->
+        </plugin>
+    </gazebo>
+
+    <!-- ==================== JOINT STATE PUBLISHER ==================== -->
+    <gazebo>
+        <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+            <joint_name>wheel_left_joint</joint_name>
+            <joint_name>wheel_right_joint</joint_name>
+            <joint_name>caster_wheel_left_joint</joint_name>
+            <joint_name>caster_wheel_right_joint</joint_name>
+            <topic>joint_states</topic>
+        </plugin>
+    </gazebo>
+
+    <!-- ==================== IMU SENSOR INSTANCE ==================== -->
+    <!-- Attaches to the imu_link already defined in imu.xacro -->
+    <gazebo reference="imu_link">
+        <sensor name="imu_sensor" type="imu">
+            <always_on>true</always_on>
+            <update_rate>100</update_rate>
+            <visualize>true</visualize>
+            <topic>/imu</topic>
+            <gz_frame_id>imu_link</gz_frame_id>
+            <imu>
+                <angular_velocity>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                            <bias_mean>0.0000075</bias_mean>
+                            <bias_stddev>0.0000008</bias_stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                            <bias_mean>0.0000075</bias_mean>
+                            <bias_stddev>0.0000008</bias_stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                            <bias_mean>0.0000075</bias_mean>
+                            <bias_stddev>0.0000008</bias_stddev>
+                        </noise>
+                    </z>
+                </angular_velocity>
+                <linear_acceleration>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                            <bias_mean>0.1</bias_mean>
+                            <bias_stddev>0.001</bias_stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                            <bias_mean>0.1</bias_mean>
+                            <bias_stddev>0.001</bias_stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                            <bias_mean>0.1</bias_mean>
+                            <bias_stddev>0.001</bias_stddev>
+                        </noise>
+                    </z>
+                </linear_acceleration>
+            </imu>
+        </sensor>
+    </gazebo>
+
+
+
+
+</robot>

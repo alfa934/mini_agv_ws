@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "4209ac7f0152411e9d4dcbf0",
+    "documentMicroversion": "61b15490aadc0d46fc8ae798",
+    "elementId": "60a6357f4c5d29ed598e106e",
+    "fullConfiguration": "default",
+    "id": "MEUC+CPxZ7DwfyiWH",
+    "isStandardContent": false,
+    "name": "imu <1>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}

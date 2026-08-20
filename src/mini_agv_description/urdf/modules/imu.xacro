@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/4209ac7f0152411e9d4dcbf0/w/3377871fe4109e8e8f25bc5b/e/d6705610344c69e12c64875a -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+
+<!-- FROM ONSHAPE2ROBOT -->
+  
+  <!-- Link imu -->
+  <link name="imu_link">
+    <inertial>
+      <origin xyz="0 -0 -0.005" rpy="0 0 0"/>
+      <mass value="0.0028125"/>
+      <inertia ixx="7.6172e-08" ixy="-0" ixz="0" iyy="7.6172e-08" iyz="0" izz="1.05469e-07"/>
+    </inertial>
+    <!-- Part imu -->
+    <visual>
+      <origin xyz="0 -0 -0" rpy="-3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/imu.stl"/>
+      </geometry>
+      <material name="imu_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 -0" rpy="-3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://mini_agv_description/assets/imu.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to imu -->
+  <joint name="imu_joint" type="fixed">
+    <origin xyz="0.19 0 0.101" rpy="0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+
+  </robot>
