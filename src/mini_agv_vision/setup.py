@@ -25,6 +25,8 @@ setup(
 entry_points={
     'console_scripts': [
         'camera_node = mini_agv_vision.camera_node:main',
+        'opencv_node = mini_agv_vision.opencv_node:main',
+
     ],
 },
 )
